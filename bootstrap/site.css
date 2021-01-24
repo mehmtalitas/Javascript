@@ -1,0 +1,10 @@
+a.ust {font-family: Vardana; font-size:10 pt; color:black; text-decoration:none}
+
+a:hover.ust {border:1px solid #FF9900; font-family: Verdana; font-size:10pt; color:#ff9900;font-weight:bold }
+
+.metin1 {font-family:Vardana; background-color:black; font-size:18pt; color:red; text-align:justify; text-indent:8; margin-left:4; margin-right:4; line-height:100% background-attachment:fixed;}
+
+.metin2 {font-family:Vardana; font-size:10pt; color:#000080; text-align:justify; text-indent:20; margin-left:20; margin-right:20; line-height:150%}
+
+.ozgecmis {font-family:Vardana; font-size:12pt; color:#4B4B4B; text-align:left; line-height:200% text-transform:uppercase}
+
