@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+
+var sayilar = new Array ()
+var i;
+
+for (i=0; i<10; i++)
+{
+sayilar[i]=prompt(i+1+". Sayıyı giriniz");
+document.write(i+1+".sayı  :"+sayilar[i]+"<br>");
+
+}
+sayilar.sort(function(a, b){return a-b});
+document.write("<br>");
+
+sayilar.reverse();
+
+
+for (i=0; i<10; i++)
+
+{
+document.write(i+1+".sayı  :"+sayilar[i]+"<br>");
+
+}
+
+
+</script>
+</body>
+</html>

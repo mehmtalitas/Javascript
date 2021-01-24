@@ -1,0 +1,52 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+
+var sayilar = new Array ();
+var tsayilar = new Array ();
+var csayilar = new Array ();
+var t=0; c=0; i=0; toplamt=0; toplamc=0;
+
+for (i=0; i<12; i++)
+{
+	sayilar[i]=Number(prompt("Sayıyı giriniz"));
+
+	if(sayilar[i]%2 == 0)
+	{
+	csayilar[c]=sayilar[i];c=c+1;
+	}
+	if(sayilar[i]%2 == 1)
+	{
+	tsayilar[t]=sayilar[i];t=t+1;
+	}
+}
+document.write("TEK SAYILAR  :","<br>");
+tsayilar.sort(function(a,b){return a - b});
+tsayilar.reverse();
+for(i=0;i<t;i++)
+{
+document.write(i+1 +". Tek Sayı   :"+tsayilar[i]+"<br>");
+toplamt=toplamt+tsayilar[i];
+}
+
+document.write("teklerin ortalaması  :"+toplamt/t+"<br>");
+
+document.write("<br>");
+document.write("<br>");
+document.write("<br>");
+
+document.write("CİFT SAYILAR  :","<br>");
+csayilar.sort(function(a,b){return a - b});
+csayilar.reverse();
+for(i=0;i<c;i++)
+{
+document.write(i+1 + ". Çift Sayı  :"+csayilar[i]+"<br>");
+toplamc=toplamc+csayilar[i];
+}
+document.write("ciftlerin ortalaması  :"+toplamc/c+"<br>");
+
+</script>
+</body>
+</html>
